@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-08" />
+    <link href="style1.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Space X</title>
+  </head>
+
+  <body>
+      <div class="titel">
+        <img src="logospacex.png" class="logo" />
+      </div>
+
+    <div class="flex-grid">
+      <div class="card" id="afstand">
+        <h1>AFSTAND</h1>
+        <canvas id="afstand-chart" width="400" height="400"></canvas>
+      </div>
+      <div class="card" id="brandstof">
+        <h1>BRANDSTOF</h1>
+        <canvas id="brandstof-chart" width="400" height="400"></canvas>
+      </div>
+      <div class="card" id="levensmiddelen">
+        <h1>LEVENSMIDDELEN</h1>
+        <canvas id="levensmiddelen-chart" width="400" height="200"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  Chart.defaults.global.defaultFontColor = "#FFFFFF";
+  Chart.defaults.global.defaultFontSize = 19;
+</script>
+<script src="line-chart.js"></script>
+<script src="bar-chart.js"></script>
+<script src="donut-chart.js"></script>
